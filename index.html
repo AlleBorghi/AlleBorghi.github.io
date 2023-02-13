@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<!-- Home Page -->
+
+<html>
+	
+	<title>Home</title>
+	
+	<head>
+	
+	<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+	
+		<style>
+		
+		body
+		{
+			background-color:#dde2ee;
+			font-family: 'Comfortaa';
+		}
+		
+ /* NAV */ 			
+		
+		nav
+		{
+			width:1100px;
+			margin-left:300px;
+			margin-top:100px;
+		}
+			
+			#name
+			{
+				float:left
+			}
+			
+			#name h1
+			{
+				font-size:35px;
+			}
+			
+			#name p
+			{
+				font-size:20px;
+			}
+			
+			#menu
+			{
+				margin-left:400px;
+				padding-top:70px;
+				width:500px;
+				position: relative;
+				animation: mymove 1.5s ;
+				animation-timing-function: ease-out;
+			}
+			
+			@keyframes mymove 
+			{
+				from {left: 650px;}
+				to {left: 0px;}
+			}
+
+			.gruppi,.sottogruppi
+			{
+				list-style-type:none;
+				margin:0px;
+				padding:0px;
+				
+			}
+			
+			.Principali 
+			{
+				text-decoration: none;
+				font-size:25px;
+				display:block;
+				width:120px;
+				height:30px;
+				padding:7px;
+				color:black;
+			}
+			
+			#posizione
+			{
+				color:blue;
+			}
+			
+			.Principali:hover
+			{
+				color:blue;
+			}
+			
+			.Secondari 
+			{
+				text-decoration: none;
+				display:block;
+				padding:3px;
+				color:black;
+			}
+			
+			.Secondari:hover
+			{
+				color:blue;
+			}
+		
+			.gruppi li
+			{
+				width:140px;
+				position:relative;
+				float:left;
+			}
+			
+			.gruppi li:hover ul
+			{
+				display:block;
+			}
+			
+			.sottogruppi
+			{
+				position:absolute;
+				top:40px;
+				display:none;
+			}
+				
+ /* MAIN */ 		
+		
+		main
+		{
+			clear:left;
+			margin-left:300px;
+			padding-top:25px;
+		}
+		
+		#douglas
+		{
+			width:300px;
+			float:left;
+		}
+		
+		#textH
+		{
+			width:400px;
+			margin-left:405px;
+		}
+		
+		#textH p
+		{
+			font-size:20px;
+		}
+		
+		#bottoni
+		{
+			position:absolute;
+			top:500px;
+			left:670px;
+			width:492.48px;
+			height:168.192px;
+		}
+		
+		#mouse
+		{
+			float:right;
+			padding-right:300px;
+		}
+
+ /* FOOTER */ 		
+		
+		footer
+		{
+			height:100px;
+			position:absolute;
+			bottom:0;
+			left:0;
+			width:100%;
+			border-top:1px solid #4d4d4d;
+			background-color:#3c7cdd;
+		}
+		
+		#Contact
+		{
+			padding-top:10px;
+
+		}
+		
+		#mail
+		{
+			width:70px;
+			height:70px;
+			float:left;
+			margin-left:300px;
+		}
+	
+		#Contact h1
+		{
+			font-size:15px;
+			color:white;
+		}
+		
+		#Contact p
+		{
+			font-size:13px;
+			color:white;
+		}
+	
+		#textC
+		{
+			position:absolute;
+			left:382px;
+		}
+		
+		#Copyright
+		{
+			padding-top:5px;
+		}
+		
+		#Copyright h1
+		{
+			font-size:15px;
+			color:white;
+		}
+		
+		#Copyright p
+		{
+			font-size:15px;
+			color:white;
+		}
+		
+		#copy
+		{
+			width:70px;
+			height:70px;
+			float:left;
+			margin-left:600px;
+		}
+		
+		#textP
+		{
+			position:absolute;
+			padding-top:10px;
+			left:1050px;
+		}
+		
+		</style>
+		
+	</head>
+		
+	<body>
+		
+		<nav>
+			
+			<div id="name">
+				<h1>Douglas Engelbart</h1>
+				<p>Inventore / Ingegnere</p>
+			</div>
+			
+			<div id="menu">
+				<ul class="gruppi">
+					<li><a class="Principali" id="posizione" href="index.html">Home</a></li>
+					<li><a class="Principali" href="vita.html">Vita</a>
+						<ul class="sottogruppi">
+							<li><a class="Secondari" href="preInv.html">Pre-Invenzioni</a></li><br>
+							<li><a class="Secondari" href="postInv.html">Post-Invenzioni</a></li>						
+						</ul>	
+					</li>
+					<li><a class="Principali" href="invenzioni.html">Invenzioni</a>
+						<ul class="sottogruppi">
+							<li><a class="Secondari" href="ar.html">ARC</a></li><br>
+							<li><a class="Secondari" href="mouse.html">Mouse</a></li><br>
+							<li><a class="Secondari" href="nsl.html">NSL</a></li>								
+						</ul>
+					</li>
+				</ul> 
+			</div>
+			
+		</nav>
+		
+		<main>
+			<img id="douglas" src="../Image/Douglas Engelbart.jfif">
+			<img  id="mouse" src="../Image/mouse.gif">
+			<div id="textH">
+				<h2>Douglas Carl Engelbart</h2>
+				
+				<p>Engelbart è stato un inventore e ingegnere statunitense.<br>
+					È stato il fondatore dell’Augmentation Research Center ed è ritenuto l'inventore<br> 
+					in collaborazione con William English, del primo mouse.
+				</p>
+			</div>
+			
+			<img  id="bottoni" src="../Image/bottoni.png" usemap="#workmap" >
+			
+			<map name="workmap">
+			
+			<area shape="circle" coords="75,84,70" alt="Computer" href="https://dougengelbart.org/">
+			<area shape="circle" coords="231,85,70" alt="Computer" href="https://youtu.be/yJDv-zdhzMY">
+			<area shape="circle" coords="395,84,70" alt="Computer" href="https://www.youtube.com/watch?v=Bt0_3pppG88">
+			
+			</map>
+			
+		</main>
+		
+		<footer>
+			
+			<div id="Contact">
+			<img id="mail" src="../Image/email.png">
+				<div id="textC">	
+					<h1>Contact</h1>
+					<p>	
+					alessandro.borghi@studenti.iispascal.it<br>
+					gabriele.ferrara@studenti.iispascal.it
+					</p>
+				</div>
+			</div>
+			
+			<div id="Copyright">
+			<img id="copy" src="../Image/copyr.jpg">
+				<div id="textP">	
+					<p>	
+					Copyright 2022 by: Borghi Alessandro  & Ferrara Gabriele
+					</p>
+				</div>
+			
+			</div>
+			
+		</footer>
+		
+	</body>
+
+</html>
